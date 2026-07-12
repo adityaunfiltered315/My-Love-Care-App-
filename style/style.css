@@ -1,0 +1,1033 @@
+/* =====================================
+   LOVE CARE APP 2026
+   PREMIUM STYLE.CSS ❤️
+===================================== */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+
+:root {
+
+
+    --primary: #ff4f8b;
+
+    --secondary: #ff9fc5;
+
+    --bg: #fff4f8;
+
+    --card: rgba(255, 255, 255, .65);
+
+    --text: #333;
+
+    --light: #666;
+
+    --shadow: 0 25px 80px rgba(255, 79, 139, .25);
+
+
+}
+
+
+
+body.dark {
+
+
+    --bg: #090914;
+
+    --card: rgba(255, 255, 255, .08);
+
+    --text: #fff;
+
+    --light: #d8d8d8;
+
+    --shadow: 0 25px 80px rgba(0, 0, 0, .5);
+
+
+}
+
+
+
+body {
+
+
+    background: var(--bg);
+
+    color: var(--text);
+
+    min-height: 100vh;
+
+    transition: .5s;
+
+    overflow-x: hidden;
+
+
+}
+
+
+
+
+
+button {
+
+    border: none;
+
+    cursor: pointer;
+
+    transition: .35s;
+
+
+}
+
+
+
+
+
+/* =========================
+WELCOME SCREEN
+========================= */
+
+
+.welcome {
+
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 9999;
+
+
+    background:
+
+        linear-gradient(135deg,
+
+            #ff4f8b,
+
+            #ffb6d5);
+
+
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+
+    color: white;
+
+
+}
+
+
+
+.welcome-heart {
+
+
+    font-size: 100px;
+
+
+    animation:
+
+        heartBeat 1s infinite;
+
+
+}
+
+
+
+.welcome h1 {
+
+
+    font-size: 42px;
+
+    margin: 20px;
+
+
+}
+
+
+
+.welcome button {
+
+
+    padding: 15px 40px;
+
+    border-radius: 50px;
+
+
+    background: white;
+
+    color: var(--primary);
+
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+
+}
+
+
+
+
+
+
+.welcome.hide {
+
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: 1s;
+
+
+}
+
+
+
+
+
+
+
+
+/* =========================
+HEADER
+========================= */
+
+
+.header {
+
+
+    width: 90%;
+
+    max-width: 1200px;
+
+
+    height: 75px;
+
+
+    margin: 25px auto;
+
+
+    padding: 0 25px;
+
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+
+    background: var(--card);
+
+
+    backdrop-filter: blur(20px);
+
+
+    border-radius: 25px;
+
+
+    box-shadow: var(--shadow);
+
+
+}
+
+
+
+
+.logo {
+
+
+    font-size: 25px;
+
+    font-weight: 800;
+
+
+}
+
+
+
+#themeBtn {
+
+
+    width: 45px;
+
+    height: 45px;
+
+
+    border-radius: 50%;
+
+
+    background: var(--primary);
+
+
+    color: white;
+
+
+    font-size: 20px;
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+HERO
+========================= */
+
+
+.hero {
+
+
+    min-height: 85vh;
+
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+
+    padding: 30px 20px;
+
+
+}
+
+
+
+
+
+.hero-card {
+
+
+    max-width: 700px;
+
+    width: 100%;
+
+
+    padding: 50px 35px;
+
+
+    text-align: center;
+
+
+    background: var(--card);
+
+
+    backdrop-filter: blur(25px);
+
+
+    border-radius: 40px;
+
+
+    box-shadow: var(--shadow);
+
+
+    animation:
+
+        fadeUp 1s ease;
+
+
+}
+
+
+
+.avatar {
+
+
+    width: 120px;
+
+    height: 120px;
+
+
+    margin: auto;
+
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+
+    border-radius: 50%;
+
+
+    font-size: 70px;
+
+
+    background:
+
+        rgba(255, 79, 139, .15);
+
+
+    animation:
+
+        heartBeat 1.5s infinite;
+
+
+}
+
+
+
+
+.status {
+
+
+    display: inline-block;
+
+
+    margin: 25px 0;
+
+
+    padding: 10px 20px;
+
+
+    border-radius: 50px;
+
+
+    background:
+
+        rgba(255, 79, 139, .15);
+
+
+    color: var(--primary);
+
+
+    font-weight: 600;
+
+
+}
+
+
+
+.hero-card h1 {
+
+
+    font-size:
+
+        clamp(35px, 6vw, 65px);
+
+
+    font-weight: 800;
+
+
+}
+
+
+
+.hero-card h1 span {
+
+
+    color: var(--primary);
+
+
+}
+
+
+
+
+
+.hero-card p {
+
+
+    margin: 25px 0;
+
+
+    line-height: 1.8;
+
+
+    font-size: 17px;
+
+
+    color: var(--light);
+
+
+}
+
+
+
+.hero-card strong {
+
+
+    color: var(--primary);
+
+
+}
+
+
+
+.main-btn {
+
+
+    padding: 17px 35px;
+
+
+    border-radius: 50px;
+
+
+    background:
+
+        linear-gradient(135deg,
+
+            #ff4f8b,
+
+            #ff8fbd);
+
+
+
+    color: white;
+
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+
+    box-shadow:
+
+        0 20px 40px rgba(255, 79, 139, .4);
+
+
+}
+
+
+
+
+
+.main-btn:hover {
+
+
+    transform: translateY(-7px);
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+SECTION
+========================= */
+
+
+.section {
+
+
+    width: 90%;
+
+    max-width: 1100px;
+
+
+    margin: 50px auto;
+
+
+    padding: 35px;
+
+
+    background: var(--card);
+
+
+    backdrop-filter: blur(20px);
+
+
+    border-radius: 30px;
+
+
+    box-shadow: var(--shadow);
+
+
+    text-align: center;
+
+
+}
+
+
+
+.section h2 {
+
+
+    font-size: 32px;
+
+    margin-bottom: 30px;
+
+
+}
+
+
+
+
+
+
+
+/* MOOD */
+
+
+.mood-box {
+
+
+    display: flex;
+
+
+    justify-content: center;
+
+
+    gap: 20px;
+
+
+}
+
+
+
+.mood {
+
+
+    width: 70px;
+
+    height: 70px;
+
+
+    font-size: 35px;
+
+
+    border-radius: 50%;
+
+
+    background:
+
+        rgba(255, 79, 139, .15);
+
+
+}
+
+
+
+
+
+#moodText {
+
+
+    margin-top: 25px;
+
+
+    color: var(--primary);
+
+
+    font-weight: 600;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* CARE GRID */
+
+
+.care-grid {
+
+
+    display: grid;
+
+
+    grid-template-columns: repeat(4, 1fr);
+
+
+    gap: 20px;
+
+
+}
+
+
+
+.care-card {
+
+
+    padding: 25px;
+
+
+    border-radius: 25px;
+
+
+    background:
+
+        rgba(255, 79, 139, .12);
+
+
+    font-size: 35px;
+
+
+}
+
+
+
+
+
+.care-card h3 {
+
+
+    font-size: 20px;
+
+
+}
+
+
+
+
+
+
+/* LETTER */
+
+
+.letter {
+
+
+    padding: 30px;
+
+
+}
+
+
+
+.envelope {
+
+
+    font-size: 80px;
+
+
+    animation:
+
+        float 2s infinite;
+
+
+}
+
+
+
+#letterText {
+
+
+    margin: 20px;
+
+}
+
+
+
+
+
+#letterBtn,
+#giftBtn {
+
+
+    padding: 15px 30px;
+
+
+    border-radius: 50px;
+
+
+    background: var(--primary);
+
+
+    color: white;
+
+
+}
+
+
+
+
+
+
+
+/* GIFT */
+
+
+.gift {
+
+
+    font-size: 100px;
+
+
+    cursor: pointer;
+
+
+    animation:
+
+        shake 2s infinite;
+
+
+}
+
+
+
+#giftMessage {
+
+
+    margin-top: 20px;
+
+
+    color: var(--primary);
+
+
+    font-weight: 700;
+
+
+}
+
+
+
+
+
+
+
+
+
+footer {
+
+
+    text-align: center;
+
+
+    padding: 30px;
+
+
+    color: var(--light);
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+ANIMATION
+========================= */
+
+
+@keyframes heartBeat {
+
+
+    50% {
+
+        transform: scale(1.15);
+
+    }
+
+
+}
+
+
+
+@keyframes fadeUp {
+
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(50px);
+
+    }
+
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+
+}
+
+
+
+@keyframes float {
+
+
+    50% {
+
+        transform: translateY(-15px);
+
+    }
+
+
+}
+
+
+
+@keyframes shake {
+
+
+    25% {
+
+        transform: rotate(5deg);
+
+    }
+
+    50% {
+
+        transform: rotate(-5deg);
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+RESPONSIVE
+========================= */
+
+
+@media(max-width:700px) {
+
+
+    .header {
+
+        width: 94%;
+
+    }
+
+
+
+    .hero-card {
+
+
+        padding: 35px 20px;
+
+
+    }
+
+
+
+
+    .section {
+
+
+        width: 94%;
+
+        padding: 25px 15px;
+
+
+    }
+
+
+
+    .care-grid {
+
+
+        grid-template-columns: repeat(2, 1fr);
+
+
+    }
+
+
+
+    .mood-box {
+
+
+        gap: 10px;
+
+
+    }
+
+
+
+    .mood {
+
+
+        width: 60px;
+
+        height: 60px;
+
+        font-size: 28px;
+
+
+    }
+
+
+
+    .section h2 {
+
+
+        font-size: 26px;
+
+
+    }
+
+
+
+}
+
+
+
+@media(max-width:380px) {
+
+
+
+    .care-grid {
+
+
+        grid-template-columns: 1fr;
+
+
+    }
+
+
+
+    .hero-card h1 {
+
+
+        font-size: 35px;
+
+
+    }
+
+
+}
